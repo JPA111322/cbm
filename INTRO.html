@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO CBM WEBSITE</title>
+</head>
+
+<body>
+    <div class="png">
+        <a href="help.html"><img src="pngegg (1).png" height="40px"></a>
+    </div>
+
+    <section class="welcome">
+        <div class="container">
+            <h1>WELCOME TO THE COLLEGE OF BUSINESS MANAGEMENT WEBSITE</h1>
+            <p>Thank you for visiting! We are delighted to have you here.</p>
+            <p>At the College of Business Management (CBM) website, we strive to provide you with the best experience
+                possible. Our team of experts is dedicated to bringing you valuable information and resources to help
+                you achieve your goals in the dynamic world of business.</p>
+            <p>Whether you're a student looking to enhance your business knowledge, an entrepreneur seeking to start or
+                grow a business, or a professional aiming to advance your career, CBM is here to support you.</p>
+            <p>Thank you for choosing CBM as your trusted resource for business education and inspiration. We hope you
+                enjoy your stay and find our website to be a valuable asset on your journey towards success.</p>
+            <button class="learn-more">
+                <span class="circle" aria-hidden="true">
+                    <span class="icon arrow"></span>
+                </span>
+                <span class="button-text"><a href="school website.html"
+                        style="text-decoration: none; color: white;">Learn More</a></span>
+            </button>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+<style>
+    button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+        font-size: inherit;
+        font-family: inherit;
+    }
+
+    button.learn-more {
+        width: 12rem;
+        height: auto;
+    }
+
+    button.learn-more .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: #282936;
+        border-radius: 1.625rem;
+    }
+
+    button.learn-more .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+    }
+
+    button.learn-more .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+    }
+
+    button.learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+    }
+
+    button.learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0;
+        margin: 0 0 0 1.85rem;
+        color: #282936;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    button:hover .circle {
+        width: 100%;
+    }
+
+    button:hover .circle .icon.arrow {
+        background: #fff;
+        transform: translate(1rem, 0);
+    }
+
+    button:hover .button-text {
+        color: #fff;
+    }
+
+
+
+    .png {
+        margin-left: 1290px;
+
+
+    }
+
+    .png img:hover {
+        background-color: rgb(0, 0, 0);
+    }
+
+    .png img:active {
+        transform: scale(0.9);
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin-top: 20px;
+
+    }
+
+    .container {
+
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+        animation: slideIn 1s ease-in-out;
+    }
+
+    .welcome {
+
+        padding: 40px 0;
+        text-align: center;
+
+    }
+
+    h1 {
+        color: rgb(0, 0, 0);
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .cta-btn {
+            font-size: 14px;
+        }
+    }
+
+    @keyframes slideIn {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+</style>
